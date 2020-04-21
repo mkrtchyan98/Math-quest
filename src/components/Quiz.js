@@ -21,6 +21,9 @@ const useStyles = makeStyles(theme =>({
   width:'100%',
   margin:'0 auto',
   height:'100%',
+  '& h1.Puzzle__Statement':{
+    fontSize:'30px'
+  }
   },
   '& span.Results__Symbol--Correct':{
     color:'green'
@@ -31,8 +34,11 @@ const useStyles = makeStyles(theme =>({
     '& div.Results': {
         display:'flex',
         flexDirection:'row',
-        justifyContent:'center',
+        justifyContent:'end',
         alignItems:'center',
+        position:'relative',
+        right:'2px',
+
     },
     '& div.PuzzleContainer':{
         background:'#1e683d',
@@ -44,6 +50,12 @@ const useStyles = makeStyles(theme =>({
     },
     '& div.PuzzleResult':{
         display:'none'
+    },
+    '& div.QuestionNumber':{
+        float:'left',
+        fontSize:'calc(10px + 2vmin)',
+        position:'relative',
+        left:'2px',
     }
 }
 }));

@@ -34,14 +34,14 @@ const Question = (level, operator) => {
     answers.splice(correctAnswerPostion, 0,  getCorrectAnswer(operator, operands))
  if(operands[0]>=operands[1]) {
     return {
-        questionString:`${operands[0]} ${operator} ${operands[1]} = ___ ?`,
+        questionString:`${operands[0]} ${operator} ${operands[1]} =  ?`,
         correctAnswer: getCorrectAnswer(operator, operands),
         answers: answers,
 }
 }
 else if(operands[0]<operands[1]){
         return {
-        questionString:`${operands[1]} ${operator} ${operands[0]} = ___ ?`,
+        questionString:`${operands[1]} ${operator} ${operands[0]} =  ?`,
         correctAnswer:getCorrectAnswer(operator, operands),
         answers:answers,
 }

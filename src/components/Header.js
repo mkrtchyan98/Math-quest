@@ -25,7 +25,7 @@ const Header = (props) => {
     return (
             <header className={classes.root}>
             <div>
-                    <Link className="back-btn" to={"/"}>&larr;</Link>
+                <Link className="back-btn" to={"/"}>&larr;</Link>
                 <Link to={"/"}>Arithmetic Questions</Link>
             </div>
         </header>

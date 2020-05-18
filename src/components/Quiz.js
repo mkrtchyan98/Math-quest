@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Puzzle from './Puzzle';
-import Question from '../Helpers/Question';
+import helpers from '../Helpers/Question';
 import { makeStyles } from '@material-ui/core/styles';
 import Header from './Header';
 import Results from './Results';
@@ -64,7 +64,7 @@ const  Quiz = (props) =>  {
  const classes = useStyles();
 const [counter,setCounter] = useState(0);
 const [level,setLevel] = useState("single");
-const [data,setData] = useState(Question("single",props.operator));
+const [data,setData] = useState(helpers.Question("single",props.operator));
 const [rightAnswers,setRightAnswers] = useState(0);
 const [wrongAnswers,setWrongAnswers] = useState(0);
    const   choseLevel = (value) => {

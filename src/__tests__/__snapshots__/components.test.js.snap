@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Answer /> renders snapshot 1`] = `ShallowWrapper {}`;
+
+exports[`<Categories /> renders snapshot 1`] = `ShallowWrapper {}`;
+
+exports[`<Header /> renders snapshot 1`] = `ShallowWrapper {}`;
+
+exports[`<Puzzle /> renders snapshot 1`] = `ReactWrapper {}`;
+
+exports[`<Results /> renders snapshot 1`] = `ShallowWrapper {}`;

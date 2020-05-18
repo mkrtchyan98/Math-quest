@@ -7,7 +7,7 @@ const obj = {
 }
 
 
-const getCorrectAnswer = (operator, nums) => {
+function getCorrectAnswer  (operator, nums)  {
     let correctAnswer;
     switch (operator) {
         case "+":
@@ -25,11 +25,11 @@ const getCorrectAnswer = (operator, nums) => {
     return correctAnswer
 }
 
-const Question = (level, operator) => {
+function Question (level, operator)  {
     let answers;
     let operands = Random(...obj[level], 2, operator)
     const correctAnswerPostion = Math.round(Math.random() * 4);
-    const correctAndLength =  getCorrectAnswer(operator, operands).toString().length;
+    const correctAndLength = exportFunctions.getCorrectAnswer(operator, operands).toString().length;
     answers = RandomAnswers(correctAndLength, 3,  getCorrectAnswer(operator, operands));
     answers.splice(correctAnswerPostion, 0,  getCorrectAnswer(operator, operands))
  if(operands[0]>=operands[1]) {
@@ -49,4 +49,8 @@ else if(operands[0]<operands[1]){
     
 }
 
-export default Question
+const exportFunctions = {
+    Question,
+    getCorrectAnswer
+}
+export default exportFunctions

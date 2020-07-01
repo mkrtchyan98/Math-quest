@@ -81,7 +81,7 @@ const [wrongAnswers,setWrongAnswers] = useState(0);
            setWrongAnswers(wrongAnswers+1)
         }
           setCounter(counter + 1);
-          setData(Question(level,props.operator));
+          setData(helpers.Question(level,props.operator));
         if(counter > 5){
                   choseLevel(counter)
               }
